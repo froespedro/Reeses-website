@@ -1,0 +1,267 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+   background-color: rgba(255,82,0,255);
+   padding-left: 15px;
+   padding-right: 15px;
+   position: sticky;
+   top: 0%;
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo a{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.nav-logo a:hover{
+    color: rgba(253,238,79,255);
+    background-color: rgba(109,63,31,255);
+    padding: 0 10px;
+    border-radius: 50px;
+}
+    
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color:rgba(254,83,0,255);
+}
+
+/*
+.home-text, .home-image {
+    flex-basis: 50%;
+}
+*/
+
+.home-text {
+    flex-basis: 40%;
+    padding: 0 50px;
+    color: white;
+}
+
+h1 {
+    font-size: 45px;
+}
+.home-button {
+    background-color: rgba(253,238,79,255);
+    width: 250px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.home-button a {
+    color: black;
+}
+
+.home-image {
+   flex-basis: 60%;
+   background-image: url(/Assignment-three/img/reeses-with-reeses-puffs-brand-hero.webp);
+   background-position: 40% 1%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+   
+}
+
+#about-section {
+    height: 600px;
+    background-color: black;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    height: 100%;
+}
+
+.about-text {
+    flex-basis: 70%;
+    height: 300px;
+    padding: 0 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.about-socials {
+    flex-basis: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.social {
+    padding-left: 300px;
+}
+
+
+#products-section {
+    height: 600px;
+    background-color: rgba(255,82,0,255);
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    height: 100%;
+}
+
+.product {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: -80px;
+}
+
+.product img {
+    width: 300px;
+    height: 300px;
+   
+}
+
+#products-section h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+#footer-section {
+    height: 300px;
+    background: linear-gradient(135deg, rgba(253,238,79,255), rgba(253,238,79,255) 50%, rgba(247,232,70,255) 50%, rgba(247,232,70,255));
+    padding: 30px 0;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -5px;
+	background-color: rgba(255,82,0,255);
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+    color: black;
+	text-transform: capitalize;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.footer-col li {
+    display: block;
+}
+
+.footer-col ul li a:hover{
+	padding-left: 8px;   
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgba(255,82,0,255);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+.footer-contact-form label {
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    display: block;
+}
+
+.footer-logo {
+    font-size: 45px;
+    text-align: center;
+    color: rgba(253,238,79,255);
+    background-color: rgba(109,63,31,255);
+    border-radius: 50px;
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+}
